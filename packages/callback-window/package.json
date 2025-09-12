@@ -1,0 +1,56 @@
+{
+  "author": "Kim Minh Thang (thangved)",
+  "browser": "./dist/esm/index.js",
+  "bugs": {
+    "url": "https://github.com/thangved/callback-window/issues"
+  },
+  "description": "A simple handler for external website window callback",
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.2",
+    "tsup": "^8.5.0"
+  },
+  "exports": {
+    ".": {
+      "browser": {
+        "default": "./dist/esm/index.js",
+        "types": "./dist/esm/index.d.ts"
+      },
+      "import": {
+        "default": "./dist/esm/index.js",
+        "types": "./dist/esm/index.d.ts"
+      },
+      "require": {
+        "default": "./dist/cjs/index.cjs",
+        "types": "./dist/cjs/index.d.cts"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/thangved/callback-window#readme",
+  "keywords": [
+    "js"
+  ],
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "name": "@thangved/callback-window",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "directory": "packages/callback-window",
+    "type": "git",
+    "url": "git+https://github.com/thangved/callback-window.git"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production tsup && npm run check-exports",
+    "check-exports": "attw --pack .",
+    "dev": "tsup --watch"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "types": "./dist/esm/index.d.ts",
+  "version": "1.0.0"
+}

@@ -1,20 +1,26 @@
 {
-  "name": "@callback-window/source",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {},
-  "private": true,
   "dependencies": {},
   "devDependencies": {
     "@nx/js": "21.5.2",
-    "@swc-node/register": "~1.9.1",
-    "@swc/core": "~1.5.7",
+    "@swc-node/register": "~1.11.1",
+    "@swc/core": "~1.13.5",
     "@swc/helpers": "~0.5.11",
     "nx": "21.5.2",
-    "prettier": "^2.6.2",
-    "tslib": "^2.3.0",
+    "prettier": "^3.6.2",
+    "tslib": "^2.8.1",
     "typescript": "~5.9.2"
   },
+  "license": "MIT",
+  "name": "@callback-window/source",
+  "private": true,
+  "repository": {
+    "url": "https://github.com/thangved/callback-window"
+  },
+  "scripts": {
+    "build": "nx run-many --target=build --all --parallel",
+    "dev": "nx run-many --target=dev --all --parallel"
+  },
+  "version": "0.0.0",
   "workspaces": [
     "packages/*"
   ]
