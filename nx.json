@@ -8,16 +8,18 @@
   "nxCloudId": "68c44fbf7e1fac5b283cca0f",
   "plugins": [
     {
-      "plugin": "@nx/js/typescript",
       "options": {
-        "typecheck": { "targetName": "typecheck" },
         "build": {
-          "targetName": "build",
-          "configName": "tsconfig.lib.json",
           "buildDepsName": "build-deps",
+          "configName": "tsconfig.lib.json",
+          "targetName": "build",
           "watchDepsName": "watch-deps"
+        },
+        "typecheck": {
+          "targetName": "typecheck"
         }
-      }
+      },
+      "plugin": "@nx/js/typescript"
     }
   ],
   "release": {
