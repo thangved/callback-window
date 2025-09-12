@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <button id="target">Open</button>
+
+    <script type="module">
+      import { startCallbackWindow } from './dist/esm/index.js';
+
+      const handleOpen = () => {
+        startCallbackWindow(
+          `https://redirect.thangved.com/?redirect_uri=${window.location.href}`,
+        );
+      };
+
+      document.getElementById('target').addEventListener('click', handleOpen);
+    </script>
+  </body>
+</html>

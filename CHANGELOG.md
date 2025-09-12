@@ -1,3 +1,13 @@
+## 1.1.2-0 (2025-09-12)
+
+### 🩹 Fixes
+
+- window not close after finished ([7a83b81](https://github.com/thangved/callback-window/commit/7a83b81))
+
+### ❤️ Thank You
+
+- Kim Minh Thắng @thangved
+
 ## 1.1.1 (2025-09-12)
 
 This was a version bump only, there were no code changes.

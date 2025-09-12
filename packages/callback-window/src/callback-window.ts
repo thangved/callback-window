@@ -35,6 +35,7 @@ export const startCallbackWindow: IStartCallbackWindow = (url, options) => {
           const currentUrl = callbackWindow.window.location.href;
           const isShouldClose = await Promise.resolve(shouldClose(currentUrl));
           if (isShouldClose) {
+            callbackWindow.close();
             return resolve({ redirectedUrl: currentUrl });
           }
         } catch (error) {
