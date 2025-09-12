@@ -28,6 +28,6 @@ export interface IStartCallbackWindowResult {
 export interface IStartCallbackWindow {
   (
     url: string,
-    options: Partial<IStartCallbackWindowOptions>,
+    options?: Partial<IStartCallbackWindowOptions>,
   ): Promise<IStartCallbackWindowResult>;
 }
