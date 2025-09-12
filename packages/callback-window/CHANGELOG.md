@@ -1,3 +1,7 @@
+## 1.1.1-0 (2025-09-12)
+
+This was a version bump only for @thangved/callback-window to align it with other projects, there were no code changes.
+
 ## 1.1.0 (2025-09-12)
 
 This was a version bump only for @thangved/callback-window to align it with other projects, there were no code changes.
