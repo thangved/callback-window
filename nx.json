@@ -21,5 +21,14 @@
         }
       }
     }
-  ]
+  ],
+  "release": {
+    "changelog": {
+      "projectChangelogs": true,
+      "workspaceChangelog": true
+    },
+    "git": {
+      "commit": true
+    }
+  }
 }
