@@ -7,7 +7,7 @@
   "description": "A simple handler for external website window callback",
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.2",
-    "tsup": "^8.5.0"
+    "tsup": "^9.0.0"
   },
   "exports": {
     ".": {
